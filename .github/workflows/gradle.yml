@@ -1,6 +1,10 @@
 name: Java CI with Gradle
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ master, TestNG, junit4, junit4-platform ]
+  pull_request:
+    branches: [ master, TestNG, junit4, junit4-platform ]
 
 jobs:
   build:
